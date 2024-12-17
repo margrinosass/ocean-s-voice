@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<!-- This website template was created by Mar Grino, Liza Nisar and Ness Conrard -->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Donate | Ocean's Voice</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Francois+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png" />
+  </head>
+  
+
+  <div id="container">
+
+    <div id="container">
+      <!-- Mobile Nav-->
+      <nav class="mobile-nav">
+        <div id="menu-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="action.html">Action</a>
+          <a href="donate.html">Donate</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <a class="menu-icon" onclick="hamburger()">
+          <div>&#9776;</div>
+        </a>
+      </nav>
+
+    <!-- Use the header area for the website name or logo -->
+    <header id="ffc-logo">
+      <a href="index.html">
+        <img
+          src="images/logo.png"
+          alt="Ocean's Voice Logo"
+          height="150"
+          width="247"
+      /></a>
+    </header>
+
+    <!-- Tablet, Desktop Nav -->
+    <nav class="tablet-desktop">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="action.html">Action</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+  <body>
+        <h2>Complete the form below to subscribe.</h2>
+
+          <form class="form-grid">
+            <!-- Start Form-->
+
+            <fieldset>
+              <legend>Customer Information</legend>
+              <label for="fName">First Name:</label>
+              <input type="text" name="fName" id="fName" required />
+
+              <label for="lName">Last Name:</label>
+              <input type="text" name="lName" id="lName" required />
+
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required />
+
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" required />
+            </fieldset>
+
+            <fieldset>
+              <legend>Different subscription </legend>
+              <p>I would like to donate:</p>
+
+              <label for="grpfit"
+                ><input
+                  type="checkbox"
+                  name="interest"
+                  id="grpfit"
+                  value="One-time"
+                />One-time
+              </label>
+
+              <label for="prtrain"
+                ><input
+                  type="checkbox"
+                  name="interest"
+                  id="prtrain"
+                  value="Monthly"
+                />Monthly
+              </label>
+
+              <p> Select a gift amount: </p>
+              <label for="nutr"
+                ><input
+                  type="checkbox"
+                  name="interest"
+                  id="nutr"
+                  value="50"
+                />$50
+              </label>
+              <label for="nutr"
+                ><input
+                  type="checkbox"
+                  name="interest"
+                  id="nutr"
+                  value="100"
+                />$100
+              </label>
+              <label for="nutr"
+                ><input
+                  type="checkbox"
+                  name="interest"
+                  id="nutr"
+                  value="150"
+                />$150
+              </label>
+              <label for="nutr"
+                ><input
+                  type="checkbox"
+                  name="interest"
+                  id="nutr"
+                  value="200"
+                />$200
+              </label>
+              <label for="nutr"
+                ><input
+                  type="checkbox"
+                  name="interest"
+                  id="nutr"
+                  value="Other"
+                />Other
+              </label>
+            </fieldset>
+
+
+            <fieldset>
+              <legend>Referral Source</legend>
+              <label for="reference">Payment Method:</label>
+              <select name="reference" id="reference">
+                <option value="friend">Visa</option>
+                <option value="google">Amex</option>
+                <option value="social">PayPal</option>
+                <option value="other">Other</option>
+              </select>
+            </fieldset>
+
+            <fieldset>
+              <legend>Referral Source</legend>
+              <label for="reference">How did you find us?</label>
+              <select name="reference" id="reference">
+                <option value="friend">Friend</option>
+                <option value="google">Google</option>
+                <option value="social">Social</option>
+                <option value="other">Other</option>
+              </select>
+
+              <label for="questions">Questions?</label>
+              <textarea
+                id="questions"
+                name="questions"
+                rows="5"
+                cols="35"
+              ></textarea>
+            </fieldset>
+
+            <input type="submit" id="submit" value="submit" class="btn" />
+          </form>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

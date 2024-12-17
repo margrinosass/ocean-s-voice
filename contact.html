@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<!-- This website template was created by Mar Grino, Liza Nisar and Ness Conrard -->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact | Ocean's Voice</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Francois+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png" />
+  </head>
+  <body>
+    <div id="container">
+
+      <div id="container">
+        <!-- Mobile Nav-->
+        <nav class="mobile-nav">
+          <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="action.html">Take Action</a>
+            <a href="donate.html">Donate</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+          <a class="menu-icon" onclick="hamburger()">
+            <div>&#9776;</div>
+          </a>
+        </nav>
+
+      <!-- Use the header area for the website name or logo -->
+      <header id="ffc-logo">
+        <a href="index.html">
+          <img
+            src="images/logo.png"
+            alt="Ocean's Voice logo"
+            height="150"
+            width="247"
+        /></a>
+      </header>
+
+      <!-- Tablet, Desktop Nav -->
+      <nav class="tablet-desktop">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="action.html">Take Action</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Use the main area to add the main content of the webpage -->
+      <main>
+        <div id="contact">
+          <h2>Ready to get started? Contact us today.</h2>
+          <h4 class="mobile tel-link">
+            <a href="tel:+19291234567">(917) 346-3806</a>
+          </h4>
+          <h4 class="tablet-desktop tel-num">(917) 346-3806</h4>
+          <h4>
+            Email us:
+            <a href="mailto:oceansvoice@asso.net" class="contact-email-link"
+              >oceansvoice@asso.net</a
+            >
+          </h4>
+          <h4>Visit us at: </h4>
+          <iframe
+            class="map"
+            src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.9774617151593!2d-118.50783372428498!3d34.01878947316958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a4c1418e5877%3A0x5e966b8099281a0b!2s966%20Palisades%20Beach%20Rd%2C%20Santa%20Monica%2C%20CA%2090403!5e0!3m2!1sfr!2sus!4v1733845546684!5m2!1sfr!2sus" 
+            width="600"
+            height="450"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <div id="form">
+          <h2>Complete the form below to subscribe.</h2>
+
+          <form class="form-grid">
+            <!-- Start Form-->
+
+            <fieldset>
+              <legend>Customer Information</legend>
+              <label for="fName">First Name:</label>
+              <input type="text" name="fName" id="fName" required />
+
+              <label for="lName">Last Name:</label>
+              <input type="text" name="lName" id="lName" required />
+
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required />
+
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" required />
+            </fieldset>
+
+            <fieldset>
+              <legend>Additional Information</legend>
+              <p>I would like to donate:</p>
+
+              <label for="grpfit"
+                ><input
+                  type="checkbox"
+                  name="interest"
+                  id="grpfit"
+                  value="Yes"
+                />Yes
+              </label>
+
+              <label for="prtrain"
+                ><input
+                  type="checkbox"
+                  name="interest"
+                  id="prtrain"
+                  value="Maybe"
+                />Maybe
+              </label>
+              <label for="nutr"
+                ><input
+                  type="checkbox"
+                  name="interest"
+                  id="nutr"
+                  value="No"
+                />No
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Referral Source</legend>
+              <label for="reference">How did you find us?</label>
+              <select name="reference" id="reference">
+                <option value="friend">Friend</option>
+                <option value="google">Google</option>
+                <option value="social">Social</option>
+                <option value="other">Other</option>
+              </select>
+
+              <label for="questions">Questions?</label>
+              <textarea
+                id="questions"
+                name="questions"
+                rows="5"
+                cols="35"
+              ></textarea>
+            </fieldset>
+
+            <input type="submit" id="submit" value="submit" class="btn" />
+          </form>
+        </div>
+      </main>
+
+      <hr />
+
+      <!-- Use the footer area to add webpage footer content -->
+      <footer>
+        <div class="copyright">
+          <p>&copy; Copyright 2024. All Rights Reserved.</p>
+          <p>
+            <a href="mailto:oceansvoice@asso.net">oceansvoice@asso.net</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
